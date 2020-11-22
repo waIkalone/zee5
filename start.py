@@ -60,8 +60,8 @@ async def handler(event):
     
 @client.on(events.NewMessage(pattern='(?i)/ls'))
 async def handler(event):
-    link =event.text
-    e = os.listdir('/')
+    link =event.text.split(" ")[1]
+    e = os.listdir(link)
     chat = await event.get_chat()
     c = "|"
     #str1.join(s)
