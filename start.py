@@ -56,7 +56,7 @@ async def handler(event):
         link,
         download=True # We just want to extract the info
     )
-    print("%(title)s.%(ext)s")
+    await client.send_message(chat,result)
     
 @client.on(events.NewMessage(pattern='(?i)/ls'))
 async def handler(event):
