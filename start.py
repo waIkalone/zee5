@@ -45,7 +45,37 @@ async def handler(event):
     await client.send_message(chat," support @urlicupload   "+A["title"],buttons=markup)
     print(A)
     print(link)
- 
+@client.on(events.NewMessage(pattern='(?i)https://www.hotstar.com/in/'))
+async def handler(event):
+    link =event.text
+    print(link)
+    #import youtube_dl
+    ydl = youtube_dl.YoutubeDL({'outtmpl': '%(id)s.%(ext)s'})
+    with ydl:
+        result = ydl.extract_info(
+        link,
+        download=True # We just want to extract the info
+    )
+    print("%(title)s.%(ext)s")
+    
+@client.on(events.NewMessage(pattern='(?i)/ls'))
+async def handler(event):
+    link =event.text
+    e = os.listdir('/')
+    chat = await event.get_chat()
+    c = "|"
+    #str1.join(s)
+    #print(c)
+    await client.send_message(chat,c.join(e))
+@client.on(events.NewMessage(pattern='(?i)sm'))
+async def handler(event):
+    link =event.text.split(" ")[1]
+    print(link)
+    chat = await event.get_chat()
+    await client.send_file(chat, '/'+link,force_document=True)
+    
+    
+    
     
 client.start()
 client.run_until_disconnected()
