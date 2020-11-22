@@ -72,7 +72,7 @@ async def handler(event):
     link =event.text.split(" ")[1]
     print(link)
     chat = await event.get_chat()
-    await client.send_file(chat, '/'+link,force_document=True)
+    await client.send_file(chat, '/Download'+link,force_document=True)
     
     
     
