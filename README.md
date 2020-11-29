@@ -5,4 +5,4 @@ TG_BOT_TOKEN
 APP_ID
 who want to add these in reveal config
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)]
+![Deploy](https://www.herokucdn.com/deploy/button.svg)
