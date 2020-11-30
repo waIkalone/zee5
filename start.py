@@ -5,7 +5,7 @@ import urls
 import os
 #from flask import request
 
-client = TelegramClient('anfghohn', int(os.environ.get("1061393" )), os.environ.get("dee44b60afe8fd325a96f5237e495d7a")).start(bot_token= os.environ.get("1452688031:AAEgLzOSa27kxuxRM1BfrFT9erdlBi2OC-A"))
+client = TelegramClient('anfghohn',1061393", "dee44b60afe8fd325a96f5237e495d7a".start(bot_token= "1452688031:AAEgLzOSa27kxuxRM1BfrFT9erdlBi2OC-A")
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
