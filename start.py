@@ -13,8 +13,6 @@ async def handler(event):
 
 🔗 Send Me: Zee5 & MX player Movies links, I will give there 👩‍💻 streaming links.
 
-TO WATCH ZEE5 IN MULTI QUALITY USE OUR z5api.herokuapp.com
-
 ⭕️ Mx Players link format:
 
  ✅ https://www.mxplayer.in/movie/039664d4d85c603cfb5a6cd66b9e29ec
