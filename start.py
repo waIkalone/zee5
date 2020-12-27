@@ -9,8 +9,17 @@ client = TelegramClient('anfghohn', int(os.environ.get("APP_ID" )), os.environ.g
 @client.on(events.NewMessage(pattern='/start'))
 async def handler(event):
     chat = await event.get_chat()
-    await client.send_message(chat,"""💁hey i am created by infinitrocyber subscribe my channel https://m.youtube.com/channel/UCLHZQApnu1vN2j7fKDgv74w 👍👍👍👍👍👍
-    i support zee5 and mx player-movies full mx player later develop send me mx players like https://www.mxplayer.in/movie/ba472677b661a6d09ab73f47d33c0c90 """)
+    await client.send_message(chat,"""💁HELLO 💙 Playboy @Baby_xD
+
+🔗 Send Me: Zee5 & MX player Movies links, I will give there 👩‍💻 streaming links.
+
+TO WATCH ZEE5 IN MULTI QUALITY USE OUR z5api.herokuapp.com
+
+⭕️ Mx Players link format:
+
+ ✅ https://www.mxplayer.in/movie/039664d4d85c603cfb5a6cd66b9e29ec
+
+ ❌ https://www.mxplayer.in/movie/xzy-name-movie-039664d4d85c603cfb5a6cd66b9e29ec """)
     
 
 @client.on(events.NewMessage(pattern='(?i)https://www.zee5.com'))
